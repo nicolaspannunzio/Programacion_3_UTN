@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel Admin - Food Store</title>
-    <link rel="stylesheet" href="../../css/styles.css" />
-  </head>
-  <body>
-    <h1>Panel de Administración</h1>
-    <p id="bienvenida"></p>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
 
-    <nav>
-      <ul>
-        <li>Gestión de productos</li>
-        <li>Gestión de categorías</li>
-        <li>Gestión de pedidos</li>
-      </ul>
-    </nav>
+<body class="dashboard">
+    
+    <header>
+        <h1>Food Store - Admin</h1>
+    </header>
 
-    <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+    <aside>
+        <h2>Menú Admin</h2>
+        <ul>
+            <li id="bienvenida"></li>
+            <li><a href="#">Gestión de productos</a></li>
+            <li><a href="#">Gestión de categorías</a></li>
+            <li><a href="#">Gestión de pedidos</a></li>
+        </ul>
+        <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+    </aside>
 
-    <script type="module" src="../../main.ts"></script>
+    <main>
+        <h2>Panel de Control</h2>
+        <section>
+            <p>Seleccioná una opción del menú lateral para comenzar a administrar la tienda.</p>
+        </section>
+    </main>
+
     <script type="module" src="./admin.ts"></script>
-  </body>
+</body>
 </html>
